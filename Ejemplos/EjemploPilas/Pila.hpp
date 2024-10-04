@@ -11,6 +11,7 @@ public:
 	void mostrar();
 	int getLongitud();
 	
+	
 private:
 	pnodoPila ultimo;
 	int longitud;

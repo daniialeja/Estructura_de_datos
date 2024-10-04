@@ -1,16 +1,23 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
 class Persona
 {
 public:
-    Persona();
-    ~Persona();
-    int getEdad();
-    bool esMujer();
-    void setEdad(int nuevaEdad);
-    void setGenero(bool mujer);
+    Persona(int edad);
+	int getEdad();
+	bool esMujer();
+	void setEdad(int nuevaEdad);
     void mostrar();
+    ~Persona();
+    
     
 private:
-    int edad;
     bool genero;
-    char dni[10] = "12345678A";
+	int edad;
+    char DNI[10];
+	
+	void generarDNI();
 };
